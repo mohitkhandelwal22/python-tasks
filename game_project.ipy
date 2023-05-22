@@ -1,0 +1,95 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "ab8a34d6",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "guess kro:25\n",
+      "rong!guess higher:\n",
+      "guess kro:88\n",
+      "rong!guess lower:\n",
+      "guess kro:50\n",
+      "rong!guess higher:\n",
+      "guess kro:70\n",
+      "rong!guess lower:\n",
+      "guess kro:65\n",
+      "rong!guess lower:\n",
+      "guess kro:55\n",
+      "rong!guess higher:\n",
+      "guess kro:63\n",
+      "rong!guess lower:\n",
+      "guess kro:60\n",
+      "rong!guess lower:\n",
+      "guess kro:62\n",
+      "rong!guess lower:\n",
+      "guess kro:57\n",
+      "rong!guess higher:\n",
+      "guess kro:59\n",
+      "correct guess:\n",
+      "attempts 11\n"
+     ]
+    }
+   ],
+   "source": [
+    "# gussing game\n",
+    "\n",
+    "# generate a random interger between 1 and 100\n",
+    "import random\n",
+    "jackpot=random.randint(1,100)\n",
+    "guess=int(input(\"guess kro:\"))\n",
+    "counter=1\n",
+    "while guess!=jackpot:\n",
+    "    \n",
+    "    if guess<jackpot:\n",
+    "        \n",
+    "        print(\"rong!guess higher:\")\n",
+    "        \n",
+    "    else:\n",
+    "        print(\"rong!guess lower:\")\n",
+    "    guess=int(input(\"guess kro:\"))\n",
+    "    counter+=1\n",
+    "    \n",
+    "else:\n",
+    "    print(\"correct guess:\")\n",
+    "    print(\"attempts\",counter)\n",
+    "    \n",
+    "        "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "808cfbfe",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
